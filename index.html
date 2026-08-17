@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#1b5537">
+<title>家族旅遊 最終定案 ｜ 8/22–8/23 苗栗（內部版）</title>
+<style>
+:root{
+  --g900:#123b28;--g800:#1b5537;--g700:#246b45;--g600:#2f8f5b;--g500:#43a86b;--g400:#6ec48a;
+  --g200:#bfe4ca;--g100:#e2f2e7;--g50:#eff8f1;
+  --cream:#fffdf6;--ink:#20342a;--soft:#4e6459;
+  --orange:#ef8a4b;--yellow:#f6c453;--ysoft:#fdf3d7;--osoft:#fdeadc;--red:#dd5f43;--rsoft:#fce7e1;
+  --sh:0 8px 24px rgba(18,59,40,.10);--shl:0 16px 40px rgba(18,59,40,.16);
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+body{
+  margin:0;font-family:"PingFang TC","Noto Sans TC","Microsoft JhengHei","Heiti TC",system-ui,sans-serif;
+  color:var(--ink);line-height:1.7;-webkit-text-size-adjust:100%;
+  background:
+    radial-gradient(900px 480px at 0% -8%, #dff0e4 0%, rgba(223,240,228,0) 62%),
+    radial-gradient(700px 420px at 108% 4%, #fdf0dc 0%, rgba(253,240,220,0) 58%),
+    var(--cream);
+  padding-bottom:env(safe-area-inset-bottom);
+}
+.wrap{max-width:760px;margin:0 auto;padding:0 14px}
+
+.hero{background:linear-gradient(140deg,var(--g800) 0%,var(--g600) 58%,var(--g500) 100%);
+  color:#fff;padding:24px 0 30px;position:relative;overflow:hidden;
+  border-radius:0 0 30px 30px;box-shadow:0 10px 30px rgba(18,59,40,.22)}
+.hero:before{content:"📋";position:absolute;right:-10px;top:-18px;font-size:7rem;opacity:.12;line-height:1}
+.hero .tag{display:inline-block;background:rgba(255,255,255,.2);border:1px solid rgba(255,255,255,.35);
+  border-radius:999px;padding:4px 14px;font-size:.8rem;font-weight:800;letter-spacing:1px;margin-bottom:9px}
+.hero h1{margin:0 0 5px;font-size:clamp(1.55rem,6.4vw,2.25rem);line-height:1.22;letter-spacing:-.5px}
+.hero p{margin:0;opacity:.94;font-size:.96rem}
+
+.lock{background:linear-gradient(135deg,var(--red),#c74e33);color:#fff;border-radius:16px;
+  padding:11px 15px;margin:14px 0 4px;font-weight:800;font-size:.92rem;box-shadow:var(--sh);line-height:1.55}
+.lock small{display:block;font-weight:600;opacity:.94;font-size:.84rem;margin-top:2px}
+
+section{padding:22px 0 2px}
+h2.sec{font-size:1.24rem;margin:0 0 10px;color:var(--g900);display:flex;align-items:center;gap:9px;
+  padding-bottom:8px;border-bottom:3px solid var(--g100)}
+.sub{color:var(--soft);font-size:.9rem;margin:-4px 0 13px}
+
+/* 定案總覽 */
+.kpi{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-bottom:14px}
+@media(min-width:620px){.kpi{grid-template-columns:repeat(4,1fr)}}
+.kpi div{background:#fff;border:1px solid var(--g100);border-radius:18px;padding:12px;text-align:center;box-shadow:var(--sh)}
+.kpi b{display:block;font-size:1.6rem;color:var(--g700);line-height:1.15;font-weight:900}
+.kpi span{font-size:.82rem;color:var(--soft);font-weight:700}
+
+.row{display:flex;gap:10px;align-items:baseline;background:#fff;border:1px solid var(--g100);
+  border-radius:14px;padding:10px 14px;box-shadow:0 4px 10px rgba(18,59,40,.05);margin-bottom:8px}
+.row .k{font-weight:800;color:var(--g800);white-space:nowrap;font-size:.92rem;min-width:84px}
+.row .v{flex:1;font-weight:700;word-break:break-word}
+.row.ok{background:linear-gradient(120deg,#fff,var(--g50))}
+.row.todo{background:linear-gradient(120deg,#fff,var(--rsoft));border-color:#f4c9bd}
+.row.todo .v{color:#b2482c}
+
+/* 行程 */
+.item{background:#fff;border:1px solid var(--g100);border-radius:20px;padding:13px 15px;margin-bottom:12px;
+  box-shadow:var(--sh);position:relative;overflow:hidden}
+.item:before{content:"";position:absolute;left:0;top:0;bottom:0;width:6px;background:linear-gradient(180deg,var(--g500),var(--g400))}
+.item.meet:before{background:linear-gradient(180deg,var(--orange),var(--yellow))}
+.item .time{display:inline-block;background:var(--g700);color:#fff;border-radius:9px;padding:2px 11px;
+  font-size:.82rem;font-weight:800;font-variant-numeric:tabular-nums;margin-bottom:6px}
+.item.meet .time{background:var(--orange)}
+.item h3{margin:0 0 3px;font-size:1.08rem;color:var(--g900);line-height:1.35}
+.item .addr{color:var(--soft);font-size:.88rem;margin:0}
+.item .meta{margin-top:8px;display:flex;flex-wrap:wrap;gap:6px}
+.pill{display:inline-flex;align-items:center;gap:5px;background:var(--g50);border:1px solid var(--g100);
+  color:var(--g800);border-radius:999px;padding:3px 11px;font-size:.82rem;font-weight:700}
+.pill.warm{background:var(--ysoft);border-color:#f0dcaa;color:#8a6316}
+.pill.orange{background:var(--osoft);border-color:#f6d3b8;color:#a8552a}
+.map{display:inline-flex;align-items:center;justify-content:center;gap:7px;margin-top:10px;width:100%;
+  background:linear-gradient(150deg,var(--g600),var(--g800));color:#fff;text-decoration:none;font-weight:800;
+  border-radius:13px;padding:11px;box-shadow:0 6px 16px rgba(36,107,69,.24);font-size:.95rem;min-height:46px}
+.daylab{display:inline-block;background:var(--g800);color:#fff;border-radius:12px;padding:5px 16px;
+  font-weight:900;margin:4px 0 12px;font-size:1rem}
+
+/* 車 */
+details.car{background:#fff;border:1px solid var(--g100);border-radius:18px;margin-bottom:9px;box-shadow:var(--sh);overflow:hidden}
+details.car>summary{list-style:none;cursor:pointer;padding:12px 15px;font-weight:800;color:var(--g800);
+  display:flex;align-items:center;gap:10px;font-size:.98rem}
+details.car>summary::-webkit-details-marker{display:none}
+details.car>summary .n{margin-left:auto;font-size:.82rem;color:var(--soft);font-weight:700}
+details.car .body{padding:0 15px 13px;display:flex;flex-wrap:wrap;gap:7px}
+.who{display:inline-flex;align-items:center;gap:6px;border-radius:999px;padding:4px 12px 4px 4px;
+  font-weight:800;font-size:.9rem;border:2px solid}
+.who .av{width:24px;height:24px;border-radius:50%;background:#fff;display:grid;place-items:center;font-size:.9rem}
+
+/* 卡片 */
+.card{background:#fff;border:1px solid var(--g100);border-radius:20px;padding:14px 15px;box-shadow:var(--sh);margin-bottom:12px}
+.card.tint{background:linear-gradient(160deg,#fff,var(--g50))}
+.card.warm{background:linear-gradient(160deg,#fff,var(--ysoft));border-color:#f3e2b4}
+.card h3{margin:0 0 8px;font-size:1.03rem;color:var(--g800);display:flex;align-items:center;gap:8px}
+.card p{margin:.15em 0}
+.dish{display:inline-block;background:#fff;border:1px solid var(--g200);border-radius:999px;
+  padding:5px 13px;margin:4px 5px 0 0;font-weight:600;font-size:.9rem}
+.dish.kid{background:var(--ysoft);border-color:#f0dcaa}
+
+/* 採買 */
+.buy{display:grid;grid-template-columns:96px 1fr;gap:4px 12px;background:#fff;border:1px solid var(--g100);
+  border-radius:16px;padding:11px 14px;margin-bottom:8px;box-shadow:0 4px 12px rgba(18,59,40,.06)}
+.buy .who2{font-weight:800;color:var(--g800);font-size:.93rem}
+.buy .it{font-size:.93rem}
+.buy .nt{grid-column:2;font-size:.82rem;color:#7a5a17}
+.buy.flag{background:linear-gradient(120deg,#fff,var(--rsoft));border-color:#f4c9bd}
+.buy.flag .nt{color:#a8552a;font-weight:700}
+@media(max-width:520px){.buy{grid-template-columns:1fr}.buy .nt{grid-column:1}}
+
+.foot{text-align:center;padding:26px 14px 42px;color:var(--soft);font-size:.86rem}
+.foot .big{font-size:1.8rem;margin-bottom:6px}
+.btn{display:inline-flex;align-items:center;gap:8px;background:linear-gradient(150deg,var(--g600),var(--g800));
+  color:#fff;border:none;font-family:inherit;font-weight:800;border-radius:16px;padding:13px 24px;font-size:.98rem;
+  box-shadow:0 8px 20px rgba(36,107,69,.26);cursor:pointer;margin:4px 5px 12px;min-height:48px}
+.btn.alt{background:#fff;color:var(--g800);border:2px solid var(--g200);box-shadow:none}
+.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%) translateY(16px);opacity:0;
+  background:var(--g900);color:#fff;padding:11px 22px;border-radius:999px;font-weight:700;z-index:80;
+  transition:.26s;pointer-events:none;box-shadow:var(--shl);font-size:.92rem}
+.toast.on{opacity:1;transform:translateX(-50%)}
+@media print{.map,.btn,.lock{display:none}details.car{break-inside:avoid}details.car>.body{display:flex!important}}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="wrap">
+    <span class="tag">📋 115.8.22 – 115.8.23 ・ 最終定案</span>
+    <h1>家族旅遊　定案總表</h1>
+    <p>苗栗兩天一夜　｜　君臨天下民宿　｜　行政中心內部版</p>
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="lock">🔒 內部版，請勿轉傳給全體家人
+    <small>本頁含慶生驚喜與採買資訊。要發給家人請用「家人版行程」。</small></div>
+
+  <!-- 1 定案總覽 -->
+  <section>
+    <h2 class="sec">✅ 定案總覽</h2>
+    <div class="kpi">
+      <div><b>30</b><span>總人數</span></div>
+      <div><b>26 / 4</b><span>成人 / 小孩</span></div>
+      <div><b>8</b><span>車輛</span></div>
+      <div><b>3</b><span>午餐桌數</span></div>
+    </div>
+    <div class="row ok"><span class="k">日期</span><span class="v">8/22（六）– 8/23（日）兩天一夜</span></div>
+    <div class="row ok"><span class="k">住宿</span><span class="v">君臨天下民宿（已訂）｜苗栗縣南庄鄉田美村 2 鄰 24 之 60 號</span></div>
+    <div class="row ok"><span class="k">第一站集合</span><span class="v">8/22　8:50–9:00am　雅聞香草植物工廠　現場集合</span></div>
+    <div class="row ok"><span class="k">不參加</span><span class="v">威量哥哥一家 3 人 ・ 志宏 ・ 蕾文（原名單 32 人 − 2 ＝ 30 人）</span></div>
+    <div class="row ok"><span class="k">8/22 午餐</span><span class="v">巨星食堂 3 桌（一桌要辣、兩桌不用辣）</span></div>
+    <div class="row ok"><span class="k">8/22 晚餐</span><span class="v">烤肉 ＋ 冬瓜蛤蜊貢丸湯</span></div>
+    <div class="row ok"><span class="k">8/23 早餐</span><span class="v">可頌／餐包／吐司＋草莓果醬＋雞蛋＋咖啡奶茶</span></div>
+    <div class="row ok"><span class="k">8/23 午餐</span><span class="v">南庄老金龍飯店</span></div>
+  </section>
+
+  <!-- 2 行程 -->
+  <section>
+    <h2 class="sec">🗓️ 定版行程</h2>
+    <span class="daylab">8/22（六）三義 ・ 頭份 ・ 南庄</span>
+
+    <div class="item meet">
+      <span class="time">8:50–9:00am 集合</span>
+      <h3>🌿 雅聞香草植物工廠</h3>
+      <p class="addr">苗栗縣三義鄉西湖村八櫃 42 號</p>
+      <div class="meta"><span class="pill">🎟️ 免門票</span><span class="pill">🅿️ 免費停車場</span>
+        <span class="pill">🛣️ 三義交流道下約 5 分鐘</span><span class="pill orange">⏰ 11:00–11:10 集合上車</span>
+        <span class="pill warm">🦟 帶防蚊液</span></div>
+      <a class="map" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=%E9%9B%85%E8%81%9E%E9%A6%99%E8%8D%89%E6%A4%8D%E7%89%A9%E5%B7%A5%E5%BB%A0%20%E8%8B%97%E6%A0%97%E7%B8%A3%E4%B8%89%E7%BE%A9%E9%84%89%E8%A5%BF%E6%B9%96%E6%9D%91%E5%85%AB%E6%AB%9E42%E8%99%9F">📍 導航</a>
+    </div>
+
+    <div class="item">
+      <span class="time">12:00pm</span>
+      <h3>🍽️ 巨星食堂　午餐（3 桌）</h3>
+      <p class="addr">苗栗縣頭份市八德二路 192 號</p>
+      <div class="meta"><span class="pill">🚗 車程約 40 分</span><span class="pill">🅿️ 店後方專用停車場</span>
+        <span class="pill orange">⏰ 13:30–13:40 集合上車</span></div>
+      <a class="map" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=%E5%B7%A8%E6%98%9F%E9%A3%9F%E5%A0%82%20%E8%8B%97%E6%A0%97%E7%B8%A3%E9%A0%AD%E4%BB%BD%E5%B8%82%E5%85%AB%E5%BE%B7%E4%BA%8C%E8%B7%AF192%E8%99%9F">📍 導航</a>
+    </div>
+
+    <div class="item">
+      <span class="time">14:20pm</span>
+      <h3>🏡 君臨天下民宿　入住</h3>
+      <p class="addr">苗栗縣南庄鄉田美村 2 鄰 24 之 60 號</p>
+      <div class="meta"><span class="pill">🚗 車程約 40 分</span><span class="pill">☕ 14:30–15:20 自由活動</span></div>
+      <a class="map" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=%E5%90%9B%E8%87%A8%E5%A4%A9%E4%B8%8B%20%E8%8B%97%E6%A0%97%E7%B8%A3%E5%8D%97%E5%BA%84%E9%84%89%E7%94%B0%E7%BE%8E%E6%9D%912%E9%84%9724%E4%B9%8B60%E8%99%9F">📍 導航</a>
+    </div>
+
+    <div class="item">
+      <span class="time">15:30pm 起</span>
+      <h3>🍖 烤肉 ＆ 團康活動 ＋ 🎂 鑫庭慶生</h3>
+      <p class="addr">晚餐：烤肉 ＋ 冬瓜蛤蜊貢丸湯。慶生安排見下方「內部安排」。</p>
+    </div>
+
+    <span class="daylab">8/23（日）南庄 ・ 銅鑼</span>
+
+    <div class="item meet">
+      <span class="time">9:30am 前</span>
+      <h3>🥐 早餐時間 ＋ 整理行李</h3>
+      <p class="addr">民宿內用早餐。</p>
+      <div class="meta"><span class="pill orange">⏰ 9:30–9:40 集合上車</span></div>
+    </div>
+
+    <div class="item">
+      <span class="time">10:00am–12:00pm</span>
+      <h3>🏮 南庄老街</h3>
+      <div class="meta"><span class="pill">🚗 車程約 10 分</span>
+        <span class="pill warm">🅿️ 公有停車場約 50 元/次</span><span class="pill warm">🅿️ 老街停車場約 100 元/次</span></div>
+      <a class="map" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=%E5%8D%97%E5%BA%84%E8%80%81%E8%A1%97%20%E8%8B%97%E6%A0%97%E7%B8%A3%E5%8D%97%E5%BA%84%E9%84%89">📍 導航</a>
+    </div>
+
+    <div class="item">
+      <span class="time">12:00pm</span>
+      <h3>🍲 南庄老金龍飯店　午餐</h3>
+      <p class="addr">苗栗縣南庄鄉民族街 1-1 號</p>
+      <div class="meta"><span class="pill">🚶 從老街走路前往</span><span class="pill orange">⏰ 13:30–13:40 集合上車</span></div>
+      <a class="map" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=%E5%8D%97%E5%BA%84%E8%80%81%E9%87%91%E9%BE%8D%E9%A3%AF%E5%BA%97%20%E8%8B%97%E6%A0%97%E7%B8%A3%E5%8D%97%E5%BA%84%E9%84%89%E6%B0%91%E6%97%8F%E8%A1%971-1%E8%99%9F">📍 導航</a>
+    </div>
+
+    <div class="item">
+      <span class="time">15:00–17:30pm</span>
+      <h3>🌷 莫內秘密花園</h3>
+      <p class="addr">苗栗縣銅鑼鄉新隆村 138-3 號</p>
+      <div class="meta"><span class="pill">🚗 車程約 1 小時 10 分</span><span class="pill">🅿️ 專屬停車場</span>
+        <span class="pill warm">🎟️ 300 元/人</span><span class="pill warm">🧒 100–140cm 100 元/人</span>
+        <span class="pill">🛣️ 銅鑼交流道接 72 線約 10 分</span></div>
+      <a class="map" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=%E8%8E%AB%E5%85%A7%E7%A7%98%E5%AF%86%E8%8A%B1%E5%9C%92%20%E8%8B%97%E6%A0%97%E7%B8%A3%E9%8A%85%E9%91%BC%E9%84%89%E6%96%B0%E9%9A%86%E6%9D%91138-3%E8%99%9F">📍 導航</a>
+    </div>
+
+    <div class="item"><span class="time">17:30pm</span><h3>🚗 自行回家</h3></div>
+  </section>
+
+  <!-- 3 乘車 -->
+  <section>
+    <h2 class="sec">🚗 乘車分配（8 台車・30 人）</h2>
+    <p class="sub">同一家人同一個顏色；點車號展開。</p>
+    <div id="carBox"></div>
+  </section>
+
+  <!-- 4 餐食 -->
+  <section>
+    <h2 class="sec">🍽️ 餐食定案</h2>
+    <div class="card tint">
+      <h3>🍚 8/22 午餐｜巨星食堂　3 桌</h3>
+      <p style="font-weight:800;color:var(--g700);margin-bottom:6px">辣度：一桌要辣、兩桌不用辣</p>
+      <div><span class="dish">客家芋頭米粉</span><span class="dish">剝皮辣椒雞湯</span><span class="dish">雞肉切盤</span>
+        <span class="dish">糖醋排骨</span><span class="dish">蹄膀筍絲</span><span class="dish">蒜酥蝦</span>
+        <span class="dish">清蒸鮮魚</span><span class="dish">三杯中卷杏鮑菇</span><span class="dish">炒三鮮</span>
+        <span class="dish">青菜</span><span class="dish kid">🧒 蝦仁炒飯</span></div>
+    </div>
+    <div class="card warm">
+      <h3>🍖 8/22 晚餐｜烤肉 ＋ 冬瓜蛤蜊貢丸湯</h3>
+      <p class="addr" style="color:var(--soft)">湯品已由山藥排骨湯改為冬瓜＋蛤蜊＋貢丸湯。</p>
+    </div>
+    <div class="card tint">
+      <h3>🥐 8/23 早餐｜輕鬆版</h3>
+      <div><span class="dish">可頌</span><span class="dish">餐包／吐司</span><span class="dish">草莓果醬</span>
+        <span class="dish">雞蛋</span><span class="dish">咖啡</span><span class="dish">奶茶</span><span class="dish">茶</span></div>
+      <p class="addr" style="color:var(--soft);margin-top:8px">前一天剩的里肌肉或肉類 → 煎一煎夾吐司，不另外開伙。</p>
+    </div>
+  </section>
+
+  <!-- 5 採買 -->
+  <section>
+    <h2 class="sec">🛒 採買分工定案</h2>
+    <div class="buy"><span class="who2">👩 大姐</span><span class="it">草莓果醬 ・ 三合一白咖啡 ・ 二合一咖啡 ・ 奶茶包 ・ 茉莉香片茶包 ・ 梅露</span></div>
+    <div class="buy"><span class="who2">🛒 平平</span><span class="it">Costco 牛肉 ・ 可頌 ・ 餐包 ・ 吐司（更換）・ 雞蛋</span></div>
+    <div class="buy"><span class="who2">🦐 梅妹</span><span class="it">牡蠣 ・ 泰國蝦 ・ 雞肉類 ・ 青菜</span>
+      <span class="nt">因台北較貴，改由雲林／布袋方向處理</span></div>
+    <div class="buy"><span class="who2">🥩 瑄穎</span><span class="it">松阪豬 4 片</span></div>
+    <div class="buy"><span class="who2">🐚 春密</span><span class="it">貢丸</span>
+      <span class="nt">✅ 蛤蜊已改由代購統一買，春密不重複買</span></div>
+    <div class="buy"><span class="who2">🥒 秀鳳</span><span class="it">冬瓜</span></div>
+    <div class="buy"><span class="who2">💰 代購 約 $4,000</span><span class="it">吳郭魚 2 隻 ・ 魚下巴 2 包或 2 斤 ・ 蛤蜊 5 斤 ・ 里肌肉 3 斤 ・ 鹹豬肉 3 片</span></div>
+    <div class="card tint" style="margin-top:12px">
+      <h3>🧊 保冷分工</h3>
+      <p>梅妹有保冰設備；大姐另有 Costco 保冷袋可裝代購食材。</p>
+    </div>
+  </section>
+
+  <!-- 6 內部安排 -->
+  <section>
+    <h2 class="sec">🎂 內部安排（不對外）</h2>
+    <div class="card warm">
+      <h3>🎉 8/22 晚上　團康活動 ＋ 郭鑫庭慶生</h3>
+      <p>15:30 起烤肉＆團康活動，晚上一起幫<b>鑫庭</b>慶生。活動組協助。</p>
+      <div class="row ok" style="margin-top:10px"><span class="k">🎂 生日蛋糕</span><span class="v">Raymond ＋ 建寧　負責</span></div>
+      <p class="addr" style="color:var(--soft);margin-top:8px">家人版行程完全不會出現慶生、生日、蛋糕字樣，可以放心外發。</p>
+    </div>
+  </section>
+</div>
+
+<div class="foot">
+  <div class="big">🌳 🍖 🎂</div>
+  <div>
+    <button class="btn" id="copyBtn">📋 複製定案摘要</button>
+    <button class="btn alt" id="printBtn">🖨️ 列印／存 PDF</button>
+  </div>
+  <div>115/8/22（六）– 115/8/23（日）・ 苗栗兩天一夜 ・ 行政中心內部版</div>
+</div>
+<div class="toast" id="toast"></div>
+
+<script>
+(function(){
+  "use strict";
+  var GROUPS=[
+    {bg:'#e3f3e8',bd:'#a5d6b7',names:['心平','建寧','萬吉','家華','又溶','博文']},
+    {bg:'#fbf1d2',bd:'#ead79c',names:['芮涵','鑫豐','景珊','鑫庭','梅仔','弟弟','妹妹']},
+    {bg:'#fde6d5',bd:'#f4c19d',names:['慧菁','裕民','弘遵','妍螢']},
+    {bg:'#fce2df',bd:'#f1bab1',names:['明通','瑄穎','柏陞','妞妞']},
+    {bg:'#ece4f7',bd:'#cbb9e7',names:['秀鳳','炎昆']},
+    {bg:'#ddedf9',bd:'#abcee8',names:['明達','春密']},
+    {bg:'#d9f0ee',bd:'#a4dbd6',names:['淑霞','濬瑋','心喬']},
+    {bg:'#f0e8db',bd:'#d7c4a6',names:['志宏','蕾文']},
+    {bg:'#e7f2d6',bd:'#c1dc9e',names:['淑琴','又齊']}
+  ];
+  var pool=['😀','😊','🙂','😄','🥰','😎','🤗','🤩','😺','🐻','🐰','🐼','🦊','🐨','🐯','🐶',
+            '🐷','🐵','🦄','🐧','🐥','🦋','🌻','🍀','🍎','🐢','🐳','🦉','🐝','🌸','⭐','🍓'];
+  var FACE={},STYLE={},i=0;
+  GROUPS.forEach(function(g){g.names.forEach(function(n){FACE[n]=pool[i%pool.length];STYLE[n]=g;i++;});});
+  var CARS=[
+    {ico:'🚗',name:'第 1 車',mem:['心平','建寧']},
+    {ico:'🚙',name:'第 2 車',mem:['萬吉','家華','秀鳳','炎昆']},
+    {ico:'🚐',name:'第 3 車',mem:['又溶','博文','淑琴','又齊']},
+    {ico:'🛻',name:'第 4 車',mem:['芮涵','鑫豐','景珊']},
+    {ico:'🚕',name:'第 5 車',mem:['鑫庭','梅仔','弟弟','妹妹']},
+    {ico:'🚌',name:'第 6 車',mem:['慧菁','裕民','弘遵','妍螢']},
+    {ico:'🚓',name:'第 7 車',mem:['明通','瑄穎','柏陞','妞妞']},
+    {ico:'🏎️',name:'第 8 車',mem:['明達','春密','淑霞','濬瑋','心喬']}
+  ];
+  var box=document.getElementById('carBox');
+  CARS.forEach(function(c,k){
+    var d=document.createElement('details');d.className='car';if(k===0)d.open=true;
+    var s=document.createElement('summary');
+    s.innerHTML='<span style="font-size:1.3rem">'+c.ico+'</span>'+c.name+'<span class="n">'+c.mem.length+' 人</span>';
+    var b=document.createElement('div');b.className='body';
+    c.mem.forEach(function(n){
+      var st=STYLE[n]||{bg:'#eee',bd:'#ccc'};
+      var e=document.createElement('span');e.className='who';
+      e.style.background=st.bg;e.style.borderColor=st.bd;
+      e.innerHTML='<span class="av">'+(FACE[n]||'🙂')+'</span>'+n;
+      b.appendChild(e);
+    });
+    d.appendChild(s);d.appendChild(b);box.appendChild(d);
+  });
+
+  var TXT='【家族旅遊 最終定案】8/22（六）–8/23（日）・君臨天下民宿\n'+
+  '總人數：30 人（成人 26／小孩 4）｜不參加：威量哥哥一家 3 人、志宏、蕾文\n'+
+  '─── 行程 ───\n'+
+  '8/22 8:50–9:00 雅聞香草植物工廠 現場集合（三義鄉西湖村八櫃42號・免門票・免費停車・帶防蚊液）\n'+
+  '　11:00–11:10 集合上車\n'+
+  '　12:00 巨星食堂 3 桌（一桌要辣、兩桌不用辣）頭份市八德二路192號\n'+
+  '　13:30–13:40 集合上車\n'+
+  '　14:20 入住君臨天下｜14:30–15:20 自由活動｜15:30 烤肉＆團康＋鑫庭慶生\n'+
+  '8/23 9:30 前早餐＋整理行李｜9:30–9:40 集合上車\n'+
+  '　10:00–12:00 南庄老街（停車 50–100 元）\n'+
+  '　12:00 老金龍飯店（民族街1-1號，走路前往）｜13:30–13:40 集合上車\n'+
+  '　15:00–17:30 莫內秘密花園（銅鑼鄉新隆村138-3號｜300元/人，100–140cm 100元）\n'+
+  '　17:30 自行回家\n'+
+  '─── 乘車（8 台車 30 人）───\n'+
+  CARS.map(function(c){return c.name+'（'+c.mem.length+'人）：'+c.mem.join('、');}).join('\n')+'\n'+
+  '─── 餐食 ───\n午餐：巨星食堂 3 桌（一桌要辣、兩桌不用辣）\n晚餐：烤肉＋冬瓜蛤蜊貢丸湯\n早餐：麵包／吐司／蛋／飲品\n'+
+  '─── 採買 ───\n'+
+  '大姐：草莓果醬、三合一白咖啡、二合一咖啡、奶茶包、茉莉香片茶包、梅露\n'+
+  '平平：Costco牛肉、可頌、餐包、吐司（更換）、雞蛋\n'+
+  '梅妹：牡蠣、泰國蝦、雞肉類、青菜\n瑄穎：松阪豬 4 片\n春密：貢丸\n秀鳳：冬瓜\n'+
+  '代購約$4,000：吳郭魚2隻、魚下巴2包或2斤、蛤蜊5斤、里肌肉3斤、鹹豬肉3片\n'+
+  '保冷：梅妹保冰設備＋大姐 Costco 保冷袋\n'+
+  '─── 內部（勿外傳）───\n8/22 晚上團康＋鑫庭慶生；生日蛋糕由 Raymond ＋ 建寧負責';
+
+  function toast(m){var t=document.getElementById('toast');t.textContent=m;t.classList.add('on');
+    setTimeout(function(){t.classList.remove('on')},2200);}
+  document.getElementById('copyBtn').onclick=function(){
+    function fb(){var ta=document.createElement('textarea');ta.value=TXT;ta.style.position='fixed';ta.style.opacity='0';
+      document.body.appendChild(ta);ta.select();
+      try{document.execCommand('copy');toast('✅ 已複製定案摘要');}catch(e){toast('⚠️ 複製失敗');}
+      document.body.removeChild(ta);}
+    if(navigator.clipboard&&navigator.clipboard.writeText){
+      navigator.clipboard.writeText(TXT).then(function(){toast('✅ 已複製定案摘要')},fb);
+    } else fb();
+  };
+  document.getElementById('printBtn').onclick=function(){window.print();};
+})();
+</script>
+</body>
+</html>
