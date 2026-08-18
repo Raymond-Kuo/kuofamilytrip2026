@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#1b5537">
+<title>家族旅遊 ｜ 8/22–8/23 苗栗兩天一夜</title>
+<style>
+:root{
+  --g900:#123b28;--g800:#1b5537;--g700:#246b45;--g600:#2f8f5b;--g500:#43a86b;
+  --g200:#bfe4ca;--g100:#e2f2e7;--g50:#eff8f1;
+  --cream:#fffdf6;--ink:#20342a;--soft:#516a5d;
+  --orange:#ee8443;--ysoft:#fdf3d7;
+  --sh:0 6px 20px rgba(18,59,40,.09);
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+body{
+  margin:0;font-family:"PingFang TC","Noto Sans TC","Microsoft JhengHei","Heiti TC",system-ui,sans-serif;
+  color:var(--ink);line-height:1.7;-webkit-text-size-adjust:100%;font-size:17px;
+  background:linear-gradient(180deg,#f2f9f4 0%,var(--cream) 340px);
+  padding-bottom:env(safe-area-inset-bottom);
+}
+.wrap{max-width:600px;margin:0 auto;padding:0 16px}
+
+.hero{background:linear-gradient(145deg,var(--g800),var(--g600));color:#fff;
+  padding:30px 0 32px;text-align:center;border-radius:0 0 28px 28px;box-shadow:0 8px 24px rgba(18,59,40,.2)}
+.hero h1{margin:0 0 8px;font-size:1.95rem;line-height:1.25;letter-spacing:-.5px}
+.hero .d{font-size:1.05rem;font-weight:700;opacity:.96}
+.hero .s{font-size:.92rem;opacity:.85;margin-top:4px}
+
+.meetbox{background:linear-gradient(140deg,var(--orange),#e06b34);color:#fff;border-radius:22px;
+  padding:20px 20px 18px;margin:-16px 0 26px;box-shadow:0 12px 28px rgba(224,107,52,.3);text-align:center}
+.meetbox .lb{font-size:.85rem;font-weight:800;letter-spacing:2px;opacity:.92}
+.meetbox .t{font-size:2.1rem;font-weight:900;line-height:1.15;margin:6px 0 2px;font-variant-numeric:tabular-nums}
+.meetbox .p{font-size:1.15rem;font-weight:800;margin-bottom:3px}
+.meetbox .a{font-size:.9rem;opacity:.93}
+.meetbox a{display:block;margin-top:14px;background:#fff;color:#c8551f;text-decoration:none;
+  font-weight:900;border-radius:14px;padding:14px;font-size:1.05rem;min-height:50px}
+
+.day{display:flex;align-items:center;gap:10px;margin:30px 0 16px}
+.day b{background:var(--g800);color:#fff;border-radius:12px;padding:7px 18px;font-size:1.1rem;font-weight:900}
+.day span{color:var(--soft);font-size:.9rem}
+
+.stop{display:flex;gap:14px;margin-bottom:6px}
+.stop .tcol{flex:0 0 84px;text-align:right;padding-top:14px}
+.stop .tcol b{display:block;font-size:1rem;font-weight:900;color:var(--g700);font-variant-numeric:tabular-nums;line-height:1.25}
+.stop .tcol small{color:var(--soft);font-size:.78rem}
+.stop .line{flex:0 0 16px;position:relative}
+.stop .line:before{content:"";position:absolute;left:5px;top:20px;width:6px;height:6px;border-radius:50%;
+  background:var(--g500);box-shadow:0 0 0 4px var(--g100)}
+.stop .line:after{content:"";position:absolute;left:7.5px;top:30px;bottom:-10px;width:2px;background:var(--g100)}
+.stop:last-of-type .line:after{display:none}
+.stop .box{flex:1;background:#fff;border:1px solid var(--g100);border-radius:18px;padding:13px 15px;
+  box-shadow:var(--sh);margin-bottom:12px;min-width:0}
+.stop .box h3{margin:0;font-size:1.12rem;color:var(--g900);line-height:1.35}
+.stop .box p{margin:4px 0 0;color:var(--soft);font-size:.9rem}
+.stop .box a.nav{display:inline-flex;align-items:center;justify-content:center;gap:6px;margin-top:10px;
+  background:var(--g600);color:#fff;text-decoration:none;font-weight:800;border-radius:12px;
+  padding:10px 18px;font-size:.95rem;min-height:44px}
+.gather{background:var(--ysoft);border:1px solid #f0dcaa;border-radius:11px;padding:6px 12px;
+  margin-top:9px;font-size:.9rem;font-weight:800;color:#8a5a12;display:inline-block}
+.menu{margin-top:10px;background:var(--g50);border:1px solid var(--g100);border-radius:13px;padding:10px 12px}
+.menu b.mt{display:block;color:var(--g800);font-size:.95rem;margin-bottom:5px}
+.menu span{display:inline-block;background:#fff;border:1px solid var(--g200);border-radius:999px;
+  padding:3px 11px;margin:3px 4px 0 0;font-size:.86rem;font-weight:600}
+.menu small{display:block;margin-top:7px;color:var(--soft);font-size:.82rem}
+
+/* ===== 卡通水果車 ===== */
+.cars{display:grid;grid-template-columns:1fr;gap:26px;margin:6px auto 0;max-width:568px}
+@media(min-width:640px){.cars{grid-template-columns:1fr 1fr;gap:28px 18px}}
+.car{position:relative;padding-bottom:16px;animation:bob 3.2s ease-in-out infinite}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+@media(prefers-reduced-motion:reduce){.car{animation:none}}
+.car .top{width:64%;margin:0 auto;border-radius:18px 18px 0 0;padding:6px 14px;background:var(--c);
+  color:#fff;font-weight:900;display:flex;align-items:center;gap:7px;font-size:1rem;
+  box-shadow:inset 0 3px 0 rgba(255,255,255,.35)}
+.car .top .em{font-size:1.3rem;line-height:1;filter:drop-shadow(0 1px 2px rgba(0,0,0,.2))}
+.car .top .cnt{margin-left:auto;font-size:.76rem;background:rgba(255,255,255,.32);border-radius:999px;padding:1px 9px}
+.car .body{background:var(--bg);border:4px solid var(--c);border-radius:24px;padding:12px 16px 18px;position:relative;
+  box-shadow:0 6px 0 rgba(0,0,0,.07)}
+.car .win{background:#fff;border:3px dashed var(--c);border-radius:16px;padding:10px 11px;
+  display:grid;grid-template-columns:repeat(2,1fr);gap:7px}
+.car .win span{background:#fff;border-radius:999px;padding:4px 8px;font-weight:900;font-size:.95rem;
+  color:var(--tx);border:2px solid var(--bg);box-shadow:0 2px 4px rgba(0,0,0,.08);text-align:center}
+.car .lamp{position:absolute;bottom:9px;width:15px;height:15px;border-radius:50%;
+  background:radial-gradient(circle at 34% 34%,#fffbe0,#f6cf52);box-shadow:0 0 9px rgba(246,207,82,.85)}
+.car .lamp.r{right:13px}.car .lamp.l{left:13px}
+.car .wheels{display:flex;justify-content:space-between;padding:0 26px;margin-top:-16px;position:relative;z-index:2}
+.car .wheels i{width:38px;height:38px;border-radius:50%;background:#3d3d3d;border:6px solid #ececec;
+  box-shadow:inset 0 0 0 4px #616161,0 4px 7px rgba(0,0,0,.22)}
+
+/* ===== 卡通小房子 ===== */
+.house{margin-top:8px;position:relative}
+.sky{position:relative;height:44px}
+.sky span{position:absolute;font-size:1.5rem}
+.sky .sun{right:6px;top:0;font-size:1.9rem}
+.sky .c1{left:8px;top:8px;opacity:.9}
+.sky .c2{left:38%;top:-2px;font-size:1.2rem;opacity:.75}
+.roof{height:66px;background:linear-gradient(180deg,#e2705a,#c04b34);
+  clip-path:polygon(50% 0,100% 100%,0 100%);position:relative;filter:drop-shadow(0 -2px 5px rgba(0,0,0,.12))}
+.flag{position:absolute;left:50%;top:-24px;transform:translateX(-50%);font-size:1.5rem;z-index:3}
+.eave{height:14px;background:#a83f2b;border-radius:8px;margin:-2px 0 0;box-shadow:0 3px 0 rgba(0,0,0,.08)}
+.floors{background:#fffaf0;border:4px solid #eddcbf;border-top:none;border-radius:0 0 26px 26px;
+  padding:4px 0;box-shadow:0 8px 0 rgba(0,0,0,.05)}
+.floor{padding:12px 13px}
+.floor+.floor{border-top:4px dotted #eddcbf}
+.floor .fl{display:inline-flex;align-items:center;gap:7px;border-radius:999px;padding:5px 16px;
+  font-weight:900;font-size:.94rem;color:#fff;margin-bottom:11px;box-shadow:0 3px 0 rgba(0,0,0,.12)}
+.floor.f2 .fl{background:#3d9a63}
+.floor.f1 .fl{background:#c98a34}
+.room{background:#fff;border:3px solid var(--rc);border-radius:18px;padding:9px 12px 11px;margin-bottom:12px;
+  box-shadow:0 4px 0 var(--rc)}
+.room:last-child{margin-bottom:2px}
+.room b{display:flex;align-items:center;gap:6px;color:var(--rc);font-size:.96rem;margin-bottom:6px}
+.room span{display:inline-block;background:var(--rl);border-radius:999px;padding:4px 12px;margin:3px 4px 0 0;
+  font-weight:800;font-size:.93rem;color:#3b4a41}
+.door{width:66px;height:52px;margin:2px auto 0;background:linear-gradient(180deg,#b9793c,#9c5f2b);
+  border-radius:14px 14px 0 0;position:relative;box-shadow:inset 0 3px 0 rgba(255,255,255,.22)}
+.door:after{content:"";position:absolute;right:11px;top:24px;width:7px;height:7px;border-radius:50%;background:#ffd76e}
+.ground{height:26px;background:linear-gradient(180deg,#7cc47f,#5fae66);border-radius:0 0 16px 16px;
+  display:flex;align-items:center;justify-content:space-around;font-size:1.05rem;letter-spacing:2px}
+
+.tips{background:linear-gradient(150deg,#fff,var(--g50));border:1px solid var(--g100);border-radius:18px;
+  padding:16px 18px;box-shadow:var(--sh);font-size:1rem}
+.tips b{color:var(--g800)}
+.alert{margin-top:12px;background:#fff2e6;border:2px solid #f4c79b;border-radius:15px;padding:12px 14px;
+  font-size:.97rem;color:#9a5518;font-weight:700;line-height:1.6}
+h2{font-size:1.25rem;margin:34px 0 12px;color:var(--g900)}
+h2 small{display:block;font-size:.85rem;font-weight:500;color:var(--soft);margin-top:2px}
+.foot{text-align:center;padding:34px 16px 46px;color:var(--soft);font-size:.9rem}
+.foot .e{font-size:1.9rem;margin-bottom:8px}
+@media(max-width:380px){.stop .tcol{flex:0 0 70px}body{font-size:16px}}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <h1>🌿 家族旅遊</h1>
+  <div class="d">8/22（六）– 8/23（日）</div>
+  <div class="s">苗栗兩天一夜 ・ 住宿：君臨天下民宿</div>
+</div>
+
+<div class="wrap">
+
+  <div class="meetbox">
+    <div class="lb">8/22（六）集合</div>
+    <div class="t">早上 8:50</div>
+    <div class="p">雅聞香草植物工廠</div>
+    <div class="a">苗栗縣三義鄉西湖村八櫃 42 號<br>直接到現場集合，免門票、有免費停車場</div>
+    <a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=%E9%9B%85%E8%81%9E%E9%A6%99%E8%8D%89%E6%A4%8D%E7%89%A9%E5%B7%A5%E5%BB%A0%20%E8%8B%97%E6%A0%97%E7%B8%A3%E4%B8%89%E7%BE%A9%E9%84%89%E8%A5%BF%E6%B9%96%E6%9D%91%E5%85%AB%E6%AB%9E42%E8%99%9F">📍 點我導航</a>
+  </div>
+
+  <!-- DAY 1 -->
+  <div class="day"><b>8/22（六）</b><span>三義 ・ 頭份 ・ 南庄</span></div>
+
+  <div class="stop">
+    <div class="tcol"><b>8:50</b><small>集合</small></div><div class="line"></div>
+    <div class="box"><h3>🌿 雅聞香草植物工廠</h3>
+      <p>免門票。園區植物多，記得帶防蚊液。</p>
+      <div class="gather">⏰ 11:00 回到車上</div></div>
+  </div>
+
+  <div class="stop">
+    <div class="tcol"><b>12:00</b><small>午餐</small></div><div class="line"></div>
+    <div class="box"><h3>🍽️ 巨星食堂</h3>
+      <p>苗栗縣頭份市八德二路 192 號　店後方有停車場</p>
+      <a class="nav" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=%E5%B7%A8%E6%98%9F%E9%A3%9F%E5%A0%82%20%E8%8B%97%E6%A0%97%E7%B8%A3%E9%A0%AD%E4%BB%BD%E5%B8%82%E5%85%AB%E5%BE%B7%E4%BA%8C%E8%B7%AF192%E8%99%9F">📍 導航</a>
+      <div class="menu"><b class="mt">🍚 菜色</b>
+        <span>客家芋頭米粉</span><span>剝皮辣椒雞湯</span><span>雞肉切盤</span><span>糖醋排骨</span>
+        <span>蹄膀筍絲</span><span>蒜酥蝦</span><span>清蒸鮮魚</span><span>三杯中卷杏鮑菇</span>
+        <span>炒三鮮</span><span>青菜</span><span>蝦仁炒飯</span>
+        <small>共 3 桌　｜　一桌要辣、兩桌不用辣</small></div>
+      <div class="gather">⏰ 13:30 回到車上</div></div>
+  </div>
+
+  <div class="stop">
+    <div class="tcol"><b>14:20</b><small>入住</small></div><div class="line"></div>
+    <div class="box"><h3>🏡 君臨天下民宿</h3>
+      <p>苗栗縣南庄鄉田美村 2 鄰 24 之 60 號<br>放行李後自由活動，可以休息或到市區晃晃。</p>
+      <a class="nav" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=%E5%90%9B%E8%87%A8%E5%A4%A9%E4%B8%8B%20%E8%8B%97%E6%A0%97%E7%B8%A3%E5%8D%97%E5%BA%84%E9%84%89%E7%94%B0%E7%BE%8E%E6%9D%912%E9%84%9724%E4%B9%8B60%E8%99%9F">📍 導航</a></div>
+  </div>
+
+  <div class="stop">
+    <div class="tcol"><b>15:30</b><small>晚餐</small></div><div class="line"></div>
+    <div class="box"><h3>🍖 烤肉 ＆ 團康活動</h3>
+      <p>在民宿一起烤肉、玩遊戲，還有冬瓜蛤蜊貢丸湯 🍲</p></div>
+  </div>
+
+  <!-- DAY 2 -->
+  <div class="day"><b>8/23（日）</b><span>南庄 ・ 銅鑼</span></div>
+
+  <div class="stop">
+    <div class="tcol"><b>9:30</b><small>前</small></div><div class="line"></div>
+    <div class="box"><h3>🥐 早餐 ＋ 整理行李</h3>
+      <p>民宿內用早餐。</p>
+      <div class="gather">⏰ 9:40 回到車上</div></div>
+  </div>
+
+  <div class="stop">
+    <div class="tcol"><b>10:00</b><small>逛逛</small></div><div class="line"></div>
+    <div class="box"><h3>🏮 南庄老街</h3>
+      <p>逛到 12:00。停車費約 50～100 元。</p>
+      <a class="nav" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=%E5%8D%97%E5%BA%84%E8%80%81%E8%A1%97%20%E8%8B%97%E6%A0%97%E7%B8%A3%E5%8D%97%E5%BA%84%E9%84%89">📍 導航</a></div>
+  </div>
+
+  <div class="stop">
+    <div class="tcol"><b>12:00</b><small>午餐</small></div><div class="line"></div>
+    <div class="box"><h3>🍲 南庄老金龍飯店</h3>
+      <p>苗栗縣南庄鄉民族街 1-1 號　從老街走路過去</p>
+      <div class="menu"><b class="mt">🐴 馬年團團套餐</b>
+        <span>放山雞肉</span><span>清蒸鱒魚</span><span>梅干絞肉</span><span>滷桂竹筍</span>
+        <span>薑絲大腸</span><span>客家小炒</span><span>黑胡椒山豬肉</span><span>鹹酥蝦</span>
+        <span>高麗菜</span><span>酸菜肉片湯</span>
+        <small>附白飯、私房熱茶　｜　一桌 10 人，共 3 桌</small></div>
+      <div class="gather">⏰ 13:30 回到車上</div></div>
+  </div>
+
+  <div class="stop">
+    <div class="tcol"><b>15:00</b><small>拍照</small></div><div class="line"></div>
+    <div class="box"><h3>🌷 莫內秘密花園</h3>
+      <p>苗栗縣銅鑼鄉新隆村 138-3 號　有停車場<br><b>門票 300 元／人</b>，身高 100–140cm 100 元。</p>
+      <a class="nav" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=%E8%8E%AB%E5%85%A7%E7%A7%98%E5%AF%86%E8%8A%B1%E5%9C%92%20%E8%8B%97%E6%A0%97%E7%B8%A3%E9%8A%85%E9%91%BC%E9%84%89%E6%96%B0%E9%9A%86%E6%9D%91138-3%E8%99%9F">📍 導航</a></div>
+  </div>
+
+  <div class="stop">
+    <div class="tcol"><b>17:30</b><small>結束</small></div><div class="line"></div>
+    <div class="box"><h3>🚗 自行回家</h3>
+      <p>到家記得在群組報平安 💚</p></div>
+  </div>
+
+  <h2>🚗 分車表<small>找找你在哪一台水果車 🍎🍊🍋</small></h2>
+  <div class="cars" id="cars"></div>
+
+  <h2>🏠 床位分配<small>君臨天下民宿 ・ 一樓 2 間、二樓 4 間</small></h2>
+  <div class="house">
+    <div class="sky"><span class="c1">☁️</span><span class="c2">☁️</span><span class="sun">☀️</span></div>
+    <div style="position:relative"><span class="flag">🚩</span><div class="roof"></div></div>
+    <div class="eave"></div>
+    <div class="floors">
+      <div class="floor f2">
+        <span class="fl">🪜 二樓 2F</span>
+        <div class="room" style="--rc:#5aa7dd;--rl:#e6f2fb"><b>🛏️ 四人房</b>
+          <span>明通</span><span>瑄穎</span><span>柏陞</span><span>家瑀</span></div>
+        <div class="room" style="--rc:#a184d6;--rl:#f0eafb"><b>🛏️ 五人房</b>
+          <span>淑霞</span><span>濬瑋</span><span>心喬</span><span>淑琴</span><span>又齊</span></div>
+        <div class="room" style="--rc:#5cb473;--rl:#e8f6ec"><b>🛏️ 六人房</b>
+          <span>心平</span><span>建寧</span><span>萬吉</span><span>家華</span><span>又溶</span><span>博文</span></div>
+        <div class="room" style="--rc:#e88bae;--rl:#fcecf2"><b>🛏️ 七人房</b>
+          <span>芮涵</span><span>鑫豐</span><span>景珊</span><span>鑫庭</span><span>梅雅</span><span>均名</span><span>桓希</span></div>
+      </div>
+      <div class="floor f1">
+        <span class="fl">🚪 一樓 1F</span>
+        <div class="room" style="--rc:#ef9a4e;--rl:#fdf0e2"><b>🛏️ 四人房</b>
+          <span>明達</span><span>春密</span><span>秀鳳</span><span>炎昆</span></div>
+        <div class="room" style="--rc:#e0b93c;--rl:#fdf7dd"><b>🛏️ 四人房</b>
+          <span>慧菁</span><span>裕民</span><span>弘遵</span><span>妍螢</span></div>
+        <div class="door"></div>
+      </div>
+    </div>
+    <div class="ground"><span>🌳</span><span>🌷</span><span>🌻</span><span>🌼</span><span>🌳</span></div>
+  </div>
+
+  <h2>🎒 記得帶</h2>
+  <div class="tips">
+    <b>防蚊液</b>、帽子、常備藥、健保卡、換洗衣物、拖鞋、現金 ☀️
+    <div class="alert">🧴 <b>民宿只提供沐浴乳和洗髮乳</b>，其他<b>盥洗用品要自己帶</b>喔！！<br>
+    （牙刷牙膏、毛巾、洗面乳、保養品、刮鬍刀……）</div>
+  </div>
+</div>
+
+<div class="foot">
+  <div class="e">🌳 🍖 🌷</div>
+  <div>期待跟大家一起出遊，路上小心 💚</div>
+</div>
+
+<script>
+(function(){
+  var CARS=[
+    {em:'🍎',name:'蘋果車',c:'#e26a6a',bg:'#fdeaea',tx:'#a83232',mem:['心平','建寧']},
+    {em:'🍊',name:'橘子車',c:'#ef9a3f',bg:'#fdeeda',tx:'#a35f16',mem:['萬吉','家華','秀鳳','炎昆']},
+    {em:'🍋',name:'檸檬車',c:'#dcc23f',bg:'#fbf6d2',tx:'#7c6a08',mem:['又溶','博文','淑琴','又齊']},
+    {em:'🥝',name:'奇異果車',c:'#79b348',bg:'#e9f5dc',tx:'#456d24',mem:['芮涵','鑫豐','景珊']},
+    {em:'🍇',name:'葡萄車',c:'#9a72cc',bg:'#efe6f7',tx:'#5f3a89',mem:['鑫庭','梅雅','均名','桓希']},
+    {em:'🍑',name:'水蜜桃車',c:'#ec87a7',bg:'#fde9ef',tx:'#a5365b',mem:['慧菁','裕民','弘遵','妍螢']},
+    {em:'🫐',name:'藍莓車',c:'#6389cc',bg:'#e4ecfa',tx:'#33528e',mem:['明通','瑄穎','柏陞','家瑀']},
+    {em:'🥥',name:'椰子車',c:'#b08f60',bg:'#f3ebde',tx:'#70512b',mem:['明達','春密','淑霞','濬瑋','心喬']}
+  ];
+  var box=document.getElementById('cars');
+  CARS.forEach(function(c,i){
+    var d=document.createElement('div'); d.className='car';
+    d.style.cssText='--c:'+c.c+';--bg:'+c.bg+';--tx:'+c.tx+';animation-delay:'+(i*0.25)+'s';
+    d.innerHTML=
+      '<div class="top"><span class="em">'+c.em+'</span>'+c.name+
+        '<span class="cnt">'+c.mem.length+' 人</span></div>'+
+      '<div class="body"><div class="win">'+
+        c.mem.map(function(n){return '<span>'+n+'</span>'}).join('')+
+      '</div><i class="lamp l"></i><i class="lamp r"></i></div>'+
+      '<div class="wheels"><i></i><i></i></div>';
+    box.appendChild(d);
+  });
+})();
+</script>
+</body>
+</html>
